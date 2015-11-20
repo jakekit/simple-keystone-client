@@ -28,6 +28,7 @@ hash containing the following keys:
 - `password` - The password to use. If it is not supplied, an API key must be present.
 - `identityEndpoint` - The identity endpoint to use, defaults to `https://identity.api.rackspacecloud.com/v2.0/tokens`
 - `tenantId` - An optional tenant ID. This helps some Keystone implementations generate correct endpoints for services in the catalog.
+- `insecure` - Optional to specify iff the request should be secure. Default is false.
 
 The callback takes two arguments `(err, res)` where `err` is the error that
 occurred, if any, and `res.access` is the access from Keystone containing an
